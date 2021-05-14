@@ -8,7 +8,14 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-public class Customer extends User {
+public class Customer {
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    @Nationalized
+    private String name;
+
     @Column(name = "phoneNumber_full", length = 15)
     private String phoneNumber;
 
