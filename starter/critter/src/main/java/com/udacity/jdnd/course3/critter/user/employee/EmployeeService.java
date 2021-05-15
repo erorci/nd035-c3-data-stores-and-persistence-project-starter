@@ -1,9 +1,9 @@
 package com.udacity.jdnd.course3.critter.user.employee;
 
-import com.udacity.jdnd.course3.critter.exception.ResourceNotFound;
 import org.assertj.core.util.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.DayOfWeek;
 import java.util.ArrayList;
@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Set;
 
 @Service
+@Transactional
 public class EmployeeService {
 
     @Autowired

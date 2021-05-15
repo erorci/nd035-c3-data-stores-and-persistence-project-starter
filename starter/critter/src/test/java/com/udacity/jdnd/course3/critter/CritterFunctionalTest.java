@@ -8,6 +8,7 @@ import com.udacity.jdnd.course3.critter.pet.PetType;
 import com.udacity.jdnd.course3.critter.schedule.ScheduleController;
 import com.udacity.jdnd.course3.critter.schedule.ScheduleDTO;
 import com.udacity.jdnd.course3.critter.user.*;
+import com.udacity.jdnd.course3.critter.user.customer.CustomerDTO;
 import com.udacity.jdnd.course3.critter.user.employee.EmployeeDTO;
 import com.udacity.jdnd.course3.critter.user.employee.EmployeeRequestDTO;
 import com.udacity.jdnd.course3.critter.user.employee.EmployeeSkill;

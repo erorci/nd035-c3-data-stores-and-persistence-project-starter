@@ -1,25 +1,22 @@
 package com.udacity.jdnd.course3.critter.user.employee;
 
 import lombok.*;
-import org.assertj.core.util.Lists;
 import org.hibernate.annotations.Nationalized;
 
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.DayOfWeek;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Employee{
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Nationalized
@@ -31,6 +28,5 @@ public class Employee{
 
     @ElementCollection
     @Builder.Default
-    @Setter
     private List<DayOfWeek> daysAvailable = new ArrayList<>();
 }
